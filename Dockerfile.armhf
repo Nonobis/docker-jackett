@@ -15,7 +15,8 @@ ARG JACKETT_ARCH="LinuxARM32"
 # environment settings
 ARG DEBIAN_FRONTEND="noninteractive"
 ENV XDG_DATA_HOME="/config" \
-XDG_CONFIG_HOME="/config"
+XDG_CONFIG_HOME="/config" \
+NO_UPDATES="--NoUpdates"
 
 RUN \
  echo "**** install packages ****" && \
